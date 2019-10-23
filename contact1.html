@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contact us</title>
+</head>
+<body bgcolor="pink">
+	<form>
+		<fieldset>
+			<table border="0">
+			<tr>
+				<td>Full Name</td>
+				<td><input type="text" required="true" title="please dont keep it empty" autofocus></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type:"email" pattern="[a-z0-9,_%+-]+@[a-z0-9,-]+\.[a-z]{2,}$" autofocus multiple></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><input type="radio" name="gen" checked>Male
+					<input type="radio" name="gen">Female
+				</td>
+			</tr>
+			<tr>
+				<td>Nationality</td>
+				<td>
+					<select>
+						<option value="Indian">Indian</option>
+						<option value="Pakistani">Pakistani</option>
+						<option value="African">African</option>
+						<option value="American">American</option>
+					</select>
+				</td>
+			</tr>		
+			
+			<tr>
+				<td>Skills</td>
+				<td><input type="checkbox" name="skills" checked>cricket
+					<input type="checkbox" name="skills" checked>badminton
+					<input type="checkbox" name="skills">football
+					<input type="checkbox" name="skills" checked>hockey
+				</td>
+			</tr>
+			<tr>
+				<td>Message</td>
+				<td><textarea placeholder="Sample resume text..." rows="10" cols="50"></textarea></td>
+			</tr>
+			<tr>
+				<th colspan="2"><input type="button" value="send"></th>
+			</tr>	
+		</table>
+	</fieldset>
+
+</form>
+</body>
+</html>

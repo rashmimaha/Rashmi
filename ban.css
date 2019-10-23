@@ -1,0 +1,6 @@
+h1{text-align: center;color: darkblue;text-shadow: 3px 3px cyan;margin: 0px;}
+.c1{background-image: url("c1.jpg");background-repeat: no-repeat;background-size: 100%;height: 200px;}
+a{color: darkgreen;text-decoration: none;}
+a:hover{color: lightgreen;text-decoration: underline;}
+.c2{color: brown;margin-left: 50px}
+body{background-color: yellow;margin: 0px;}
