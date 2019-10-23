@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>getElementById</title>
+	<script type="text/javascript">
+		function check() 
+		{
+		var a=document.getElementById("p1").value;
+		if (a=="") 
+		{
+			document.getElementById("p2").style.color="red";
+		    document.getElementById("p2").innerHTML="please fill the data";
+		}
+		else
+		{
+			var result=a*a*a;
+			document.getElementById("p2").innerHTML="cube is"+result;
+			document.getElementById("p2").backgrounColor:"pink";
+		}	// body...
+		}
+	</script>
+</head>
+<body>
+<form>
+	Number:<input type="text" id="p1">
+	<div id="p2"></div>
+	<input type="button" value="CUBE" onclick="check()">
+</form>
+</body>
+</html>

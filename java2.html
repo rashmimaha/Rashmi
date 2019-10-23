@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Given number is prime or not</title>
+	<script type="text/javascript">
+		{
+			var i,flag=0,number;
+			number=parseFloat(prompt("enter the number"));
+			for(i=2;i<=number/2;i++)
+			{
+				if(number%i == 0)
+				{
+					flag=1;
+					break;
+				}
+			}
+			if(flag==0)
+			{
+				document.write(number+"-the number is prime");
+			}
+			else
+			{
+				document.write(number+"-the number is not prime");
+			}
+		}
+	</script>
+</head>	
+</html>

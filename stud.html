@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form tag example</title>
+</head>
+<center>STUDENT REGISTRAION FORM</center>
+<body bgcolor="white">
+	<form>
+		<table>
+			<tr>
+				<td>First Name:</td>
+				<td><input type="text" maxlenght="15"></td>
+				
+			</tr>
+			<tr>
+				<td>Last Name</td>
+				<td><input type="text" required="true" ></td>
+			</tr>
+			<tr>
+				<td>Enter Email:</td>
+				<td><input type="email" pattern="[a-z0-9,_%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autofocus multiple></td>
+			</tr>
+			<tr>
+				<td>Mobile Number:</td>
+				<td><input type="tel" maxlength="10"></td>
+			</tr>
+			<tr>
+				<td>Gender:</td>
+				<td><input type="radio" name="gen" checked>male
+					<input type="radio" name="gen" checked>female
+				</td>
+			</tr>
+			<tr>
+				<td>Date of Birth</td>
+				<td><input type="date"></td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>City</td>
+				<td><input type="text" name="city"></td>
+			</tr>
+			<tr>
+				<td>pin code</td>
+				<td><input type="tel"></td>
+			</tr>
+			<tr>
+				<td>state</td>
+				<td>
+					<select>
+						<option value="state">Karnataka</option>
+						<option value="state">Kerala</option>
+						<option value="state">Tamilnadu</option>
+						<option value="state">Andhra Pradesh</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Country</td>
+				<td>
+					<select>
+						<option value="india">India</option>
+						<option value="china">China</option>
+						<option value="bangla">Bangladesh</option>
+						<option value="sri">Sri Lankha</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Hobbies</td>
+				<td>
+					<input type="checkbox" checked>Drawing
+					<input type="checkbox" checked>Singing
+					<input type="checkbox" checked>Dancing
+					<input type="checkbox" cheched>Skecthing
+					<input type="checkbox" checked>others
+				</td>
+			</tr>
+			<tr>
+				<td>Qualification</td>
+				<td>
+					<input type="checkbox">High School(10)
+					<input type="checkbox">PU(11th and 12th)
+					<input type="checkbox">Gradution
+					<input type="checkbox">Post Gradution
+					<input type="checkbox">Phd
+				</td>
+			</tr>
+			<tr>
+				<td>Courses Applied for</td>
+				<td>
+					<input type="checkbox">BCA
+					<input type="checkbox">B.Sc
+					<input type="checkbox">B.Com
+					<input type="checkbox">BA
+					<input type="checkbox">MCA
+					<input type="checkbox">M.Sc
+					<input type="checkbox">MA
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="Submit" value="click here">
+				</td>
+				<td>
+					<input type="Reset">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+
+
