@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>login page</title>
+<style type="text/css">
+table{border:solid;border-color: blue;border-radius: 10px}
+</style>
+<script type="text/javascript">
+function login()
+{
+	var a=document.getElementById("n1").value;
+	var b=document.getElementById("n2").value;
+	if (a=="cmru" && b=="cmru#123")
+	{
+		document.getElementById("n3").innerHTML="login successfull";
+	}
+	else if(a=="" && b=="")
+	{
+		document.getElementById("n3").innerHTML="enter username and password";
+	}
+	else if(a=="")
+	{
+		document.getElementById("n3").innerHTML="enter username";
+	}
+	else if(b=="")
+	{	
+		document.getElementById("n3").innerHTML="enter password";
+	}
+	else
+	{	
+		document.getElementById("n3").innerHTML="login successfull";
+	}
+
+}
+
+</script>
+</head>
+<body>
+<center>
+<div id="id1">
+<table cellspacing="30px">
+<form>
+<tr>
+<td>Username:</td>
+<td><input type="text" placeholder="username" id="n1"></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td><input type="password" placeholder="password" id="n2"></td>
+</tr>
+<tr><td><div id="n3"></div></td></tr>
+<tr><th colspan ="2"><input type="button" value="LOGIN" onclick="login()"></th></tr>
+<tr><th colspan="2"><button>NEW USER</button></td></tr>
+</form>
+</table>
+<form action="drp.html" method="post">
+<table>
+<tr><th colspan="2"><input type="submit" value="new user"></th></tr>
+</table>
+</form>
+</div>
+</center>
+</body>
+</html>
