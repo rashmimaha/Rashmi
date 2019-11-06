@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>creating a class</title>
+	<script type="text/javascript">
+		class student
+		{
+			constructor(name,sem,sub1,sub2,sub3)
+			{
+				this.name=name;
+				this.sem=sem;
+				this.sub1=sub1;
+				this.sub2=sub2;
+				this.sub3=sub3;
+			}
+			displayData()
+			{
+				document.write("<br>Name is:"+this.name+ "<br>sem:"+this.sem+ "<br>sub1:"+this.sub1+ "<br>sub2:"+this.sub2+ "<br>sub3:"+this.sub3);
+			}
+			calculateResult()
+			{
+				this.total=this.sub1+this.sub2+this.sub3;
+				document.write("<br>Total is :"+this.total);
+				this.avg=this.total/3;
+				document.write("<br>Average of Marks is :"+this.avg);
+				if(this.avg > 60)
+					document.write("<br>Grade A");
+				else if(this.avg >50 && this.avg< 60)
+					document.write("<br>Grade B");
+				else if(this.avg >=40 && this.avg<50)
+					document.write("<br>Grade C");
+				else
+					document.write("<br>Grade D");
+			}
+		}
+		var s1= new student("tom",3,45,34,42);
+		s1.displayData();
+		s1.calculateResult();
+		var s2= new student("jerry",2,38,32,40);
+		s2.displayData();
+		s2.calculateResult();
+	</script>
+</head>
+</html>
