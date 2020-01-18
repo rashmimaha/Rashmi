@@ -1,10 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-<p id="p2">Hello world...</p>
-<script type="text/javascript">
-	document.getElementById("p2").style.backgroundColor="pink";
-</script>
+	<title>login</title>
+	<style type="text/css">
+		.c{background-image: url('bg.jpg'); font-size: 30px;}
+		#id3{font-size: 30px;}
+		.c2{background-image: url('r2.jpg');height:80px;}
+		.t1{background-repeat: no-repeat;background-size: 100%;background-position:center;margin-left: 350px;} 
+		#d1{border-style: solid;border-radius: 8px;font-size: 20px;margin-left: 150px;width:700px;}
+		.b1{border-style: solid;border-radius: 5px;margin-left: 40px;margin-bottom: 60px;}
+		.b2{font-size: 30px; background-color:  #F0E68C;text-align: center;}
+		.b3{text-align: justify;}
+		/*#p3{margin-left: 50px;/*background-color: #D2691E;width: 260px;height: 30px;color: #FFDAB9;}
+		#p4:hover{font-size:20px;}
+		#p4{margin-left: 30px;margin-top: 800px;font-size: 15px;}*/
+		#id9{text-decoration: none;}
+		.a{margin-left: 150px;font-size: 20px;text-decoration: none;}
+		.a1{margin-bottom: 50px;}
+		.a2{background-color: #F5FFFA;}
+	</style>
+	<script type="text/javascript" src="p1.js"></script>
 </head>
+<body onLoad="document.login.em.focus();" bgcolor="#F0FFFF">
+<div class="c2">
+	
+</div>
+<div class="c"><p>LOGIN  TO  YOUR  ACCOUNT</p></div>
+<table id="id3" cellspacing="30px">
+<tr>
+<td><a href="Nuser.html" id="id9"> New user? Register</a></td>
+</tr>
+</table>
+<div>
+	<table>
+		<tr>
+			<td>
+				<div class="a2">
+					<table cellspacing="30px" name="login" class="b1">
+						<form>
+							<tr>
+								<td>Email:</td>
+								<td>
+										<input type="Email" placeholder="Email" id="n1" name="em">
+								</td>
+							</tr>
+							<tr>
+								<td>Password:</td>
+								<td>
+										<input type="password" name="pass" placeholder="password" id="n2">
+								</td>
+							</tr>
+							<tr>
+								<th colspan ="2"><input type="button" value="LOGIN" onclick="login()"></th>
+								<th colspan="2"><button>Reset</button></th>
+							</tr>
+						</form>
+					</table>
+				</div>
+				<div class="a1">
+					<a href="hm.html" class="a">ON BOARD SCHEMES</a>
+				</div>
+			</td>
+			<td>
+				<div id="d1">
+					<p class="b2">DISCLAIMER</p>
+						<table class="b3">
+							<tr>
+								<td>
+									<ul class="b5"><li>this is a scholarship by NSDL for applying to 
+											varoius scholarships provided by corporates.this does 
+											not charge any fees to students in any way to apply for 
+											scholarship.</li>
+											<li>Awarding of scholarship is the sole direction right of a corporate.</li>
+											<li>Applying to scholarship does not in any way guarantee the award of scholarship.</li>
+											<li>This reserves the right to withdraw or amend any listed 
+												scholarship without prior notification.</li>
+											<li>Scholarship are offered subject to funding and availability.</li>
+											<li>This will not be liable for any loss or 
+											damage that may be suffered directly or indirectly by 
+											applicants while dealing with any unauthorized indiviuals and person</li></ul>
+								</td>
+							</tr>
+						</table>
+				</div>
+		    </td>
+		</tr>
+	</table>
+</div>
+</body>
 </html>

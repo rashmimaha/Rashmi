@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contact us</title>
+	<style type="text/css">
+		.d1{font-size: 20px;border-style: solid;width: 700px;height: 500px;margin-top: 100px;text-align: justify; }
+		.d2{background-color: olive;font-size: 30px; }
+		.d3{background-color: blue;width: 90px;height: 30px;font-size: 15px;margin-left: 80px;}
+		.d4{width: 90px;height: 30px;font-size: 15px;background-color: red;margin-right: 50px;}
+		.d5{background-image: url('r2.jpg');height:80px;}
+	</style>
+	<script type="text/javascript" src="cont.js"></script>
+</head>
+<body bgcolor="#E0FFFF" onload="document.registration.dom.focus();">
+	<div class="d5">
+	
+	</div>
+	<center>
+		<div class="d1">
+			<div class="d2">FORM FOR REGISTER</div>
+					<div>
+						<table cellspacing="25px">
+							<form name="registration">
+								<tr>
+									<td>State Of Domicile*</td>
+									<td>
+										<select>
+											<option selected="" value="Default" name="dom">(Please select domicile)</option>
+											<option value="State" name="dom">Karnataka</option>
+											<option value="State" name="dom">Kerala</option>
+											<option value="State" name="dom">Tamil Nadu</option>
+									    </select>
+								    </td>
+								</tr>
+								<tr>
+									<td>Name of Student*</td>
+									<td><input type="text" name="name"></td>
+								</tr>
+								<tr>
+									<td>Gender*</td>
+									<td>
+										<input type="radio" name="gender" checked>Male
+										<input type="radio" name="gender">Female
+									</td>
+								</tr>
+								<tr>
+									<td>Mobile Number</td>
+									<td><input type="text" name="number"></td>
+								</tr>
+								<tr>
+									<td>Date Of Birth(DD/MM/YYYY)*</td>
+									<td><input type="text" name="dob"></td>
+								</tr>
+								<tr>
+									<td>Aadhar Number*</td>
+									<td><input type="text" name=""></td>
+								</tr>
+								<tr>
+									<td>Email Id</td>
+									<td><input type="text" name=""></td>
+								</tr>
+								<tr>
+									
+									<th colspan ="2"><input type="button" value="Register" onclick="register()" class="d3"></th>
+									<th colspan="2"><button class="d4">Cancel</button></th>
+								</tr>
+							</form>
+						</table>
+					</div>
+		</div>
+	</center>
+</body>
+</html>

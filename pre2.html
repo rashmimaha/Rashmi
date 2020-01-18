@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>application</title>
+	<style type="text/css">
+		.g1{width: 900px;height: 1100px;border-style: solid;font-size: 20px;background-color: #F5FFFA;}
+		.g2{margin-top: 30px;}
+		.g3{background-color:  #FFFACD;font-size: 15px;margin-right: 50px;width: 100px;height: 40px;}
+		.g4{background-color:  #FFFACD;font-size: 15px;margin-left: 50px;width: 100px;height: 40px;}
+		.g5{margin-top: 50px;}
+		.g6{text-decoration: underline;}
+		.g7{background-color:  #F0E68C;}
+		.g8{background-image: url('r2.jpg');height:80px;}
+	</style>
+</head>
+<body bgcolor="#E0FFFF">
+	<div class="g8">
+	
+	</div>
+	<div class="g6"><center><h1 class="g7">Application For Pre-martic Scholarship</h1></div>
+		<center>
+			<div class="g1">
+				<table class="g2"> 
+					<form>
+						<tr>
+							<td>Full Name*</td>
+							<td><input type="text" maxlength="25" placeholder="please enter full name as in AADHAAR" width="6px" size="35" name="nam"></td>
+						</tr>
+						<tr>
+							<td>Date of Birth*</td>
+							<td><input type="date" name="dob"></td>
+						</tr>
+						<tr>
+							<td>Gender*</td>
+							<td>
+								<input type="radio" name="gender" checked>Male
+								<input type="radio" name="gender">Female
+							</td>
+						</tr>
+						<tr>
+							<td>Category</td>
+							<td>
+								<select>
+										<option selected="" value="Default" name="">(Please select category)</option>
+										<option value="category" name="cat">General</option>
+										<option value="category" name="cat">OBC</option>
+										<option value="category" name="cat">SC/ST</option>
+										<option value="category" name="cat">Others</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Email</td>
+							<td><input type="email" pattern="[a-z0-9,_%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" size="35" name=""></td>
+						</tr>
+						<tr>
+							<td>Mobile Number</td>
+							<td><input type="tel" maxlength="10" name=""></td>
+						</tr>
+						<tr>
+							<td>Upload Proof Of Identity</td>
+							<td><input type="file" multiple name=""></td>
+						</tr>
+						<tr>
+							<td>Annual Income</td>
+							<td><input type="text" placeholder="annual income as per income certificate" size="35" name=""></td>
+						</tr>
+						<tr>
+							<td>Upload Proof Of Income Certificate</td>
+							<td><input type="file" multiple name="u"></td>
+						</tr>
+					</form>
+				</table>
+				<div class="g6"><p><center>ADDRESS FOR COMMUNICATION</center></p></div>
+			<form>
+				<table>
+					<tr>
+						<td>Address</td>
+						<td><input type="text" pattern="[a-zA-Z]" size="35" name=""></td>
+					</tr>
+					<tr>
+						<td>PIN</td>
+						<td><input type="text" pattern="[0-9]{6}" name=""></td>
+					</tr>
+					<tr>
+						<td>District</td>
+						<td>
+							<select>
+									<option selected="" value="Default">(Please select a district)</option>
+									<option>Bangalore</option>
+									<option>Mysore</option>
+									<option>Belgum</option>
+									<option>Bagalkot</option>
+									<option>Belagavi</option>
+									<option>Ballari</option>
+									<option>Bidar</option>
+									<option>Vijayapur</option>
+									<option>Chikkamagaluru</option>
+									<option>Mysore</option>
+									<option>Dakshina Kannada</option>
+									<option>Davanagere</option>
+									<option>Chitradurga</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>State</td>
+						<td>
+							<select name="sta">
+									<option selected="" value="Default">(Please select a state)</option>
+									<option>Karnataka</option>
+									<option>Kerala</option>
+									<option>TamilNadu</option>
+									<option>Maharashtra</option>
+									<option>Gujurat</option>
+									<option>AndhraPradesh</option>
+									<option>Madhyapradesh</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Upload proof of address</td>
+						<td><input type="file" name=""></td>
+					</tr>
+				</form>
+			</table>
+			<div class="g6"><p><center>BANK ACCOUNT DETAILS</center></p></div>
+				<form>
+					<table>
+						<tr>
+							<td>Bank Account Number</td>
+							<td><input type="text" size="30" name=""></td>
+						</tr>
+						<tr>
+							<td>IFSC Code</td>
+							<td><input type="text" pattern="[a-zA-z]{4}[1-9]{7}"  size="30" name=""></td>
+						</tr>
+						<tr>
+							<td>Bank Name</td>
+							<td><input type="text" size="30" name="b"></td>
+						</tr>
+						<tr>
+							<td>Bank Branch</td>
+							<td><input type="text" size="30" name=""></td>
+						</tr>
+						<tr>
+							<td>Your Name As Per Pass Book</td>
+							<td><input type="text" size="30" name=""></td>
+						</tr>
+						<tr>
+							<td>Upload Bank Passbook</td>
+							<td><input type="file" name=""></td>
+						</tr>
+					</table>
+				</form>
+		        <div class="g6"><p><center>CLASS 10th</center></p></div>
+					<table>
+						<form>
+							<tr>
+								<td>Name Of The Instituon</td>
+								<td><input type="text" size="30" name="institutn"></td>
+							</tr>
+							<tr>
+								<td>Month And Year Of Passing</td>
+								<td><input type="month and year" name="monthyear"></td>
+							</tr>
+							<tr>
+								<td>Percentage</td>
+								<td><input type="text" name=""></td>
+								<td>Total Marks Obtained</td>
+								<td><input type="text"></td>
+								<td>Out Of Total Marks</td>
+								<td><input type="text"></td>
+							</tr>
+							<tr>
+								<td>Upload Marksheet</td>
+								<td><input type="file"></td>
+							</tr>
+						</form>
+					</table>
+					<div>
+						<table class="g5">	
+							<tr>
+								<th colspan ="2"><input type="button" value="Submit" onclick="" class="g3"></th>
+								<th colspan="2"><button class="g4">Reset</button></th>
+							</tr>
+						</table>
+					</div>
+		   </div>
+	    </body>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#id1{Border-bottom-style:solid;border-bottom-color:#00ff00;border-bottom-width:3px;}
+		#id2{border-style:solid;border-width:1px;}
+		div{background-color: #DCDCDC;}
+		td{font-size:20px;}
+	</style>
+	<script src="ex1.js"></script>
+	<title>Regis</title>
+</head>
+<body onLoad="document.registration.nam.focus();" bgcolor="#E0FFFF">
+	<div><h1 id="id2"><center>APPLICATION</center></h1></div>
+		<form name="registration">
+			<table> 
+				<tr>
+					<td>Full Name</td>
+					<td id="id1"><input type="text" maxlength="25" placeholder="please enter full name as in AADHAAR" width="6px" name="nam"></td>
+				</tr>
+				<tr>
+					<td>Date of Birth</td>
+					<td id="id1"><input type="date" name="dob"></td>
+				</tr>
+				<tr>
+					<td>Gender*</td>
+					<td>
+						<input type="radio" value="male" name="sex" checked>Male
+						<input type="radio" value="female" name="sex">Female
+					</td>
+				</tr>
+				<tr>
+					<td>Category</td>
+					<td>
+						<select>
+								<option selected="" value="Default" name="cat">(Please select category)</option>
+								<option value="category" name="cat">General</option>
+								<option value="category" name="cat">OBC</option>
+								<option value="category" name="cat">SC/ST</option>
+								<option value="category" name="cat">Others</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td id="id1"><input type="email" pattern="[a-z0-9,_%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email"></td>
+				</tr>
+				<tr>
+					<td>Mobile Number</td>
+					<td id="id1"><input type="tel" maxlength="10" name="mobn"></td>
+				</tr>
+				<tr>
+					<td>Upload Proof Of Identity</td>
+					<td id="id1"><input type="file" multiple name="upoi"></td>
+				</tr>
+				<tr>
+					<td>Annual Income</td>
+					<td id="id1"><input type="text" placeholder="annual income as per income certificate" name="ani"</td>
+				</tr>
+				<tr>
+					<td>Upload Proof Of Income Certificate</td>
+					<td id="id1"><input type="file" multiple name="upoic"></td>
+				</tr>
+			</form>
+		</table>
+		<div><h2 id="id2"><center>ADDRESS FOR COMMUNICATION</center></h2></div>
+			<form>
+				<table>
+					<tr>
+						<td>Address</td>
+						<td id="id1"><input type="text" pattern="[a-zA-Z]" name="adds"></td>
+					</tr>
+					<tr>
+						<td>PIN</td>
+						<td id="id1"><input type="text" pattern="[0-9]{6}" name="pin"></td>
+					</tr>
+					<tr>
+						<td>Village/Area/Locality</td>
+						<td id="id1"><input type="text" name="vill"></td>
+					</tr>
+					<tr>
+						<td>District</td>
+						<td>
+							<select name="dis">
+									<option selected="" value="Default">(Please select a district)</option>
+									<option>Bangalore</option>
+									<option>Mysore</option>
+									<option>Belgum</option>
+									<option>Bagalkot</option>
+									<option>Belagavi</option>
+									<option>Ballari</option>
+									<option>Bidar</option>
+									<option>Vijayapur</option>
+									<option>Chikkamagaluru</option>
+									<option>Mysore</option>
+									<option>Dakshina Kannada</option>
+									<option>Davanagere</option>
+									<option>Chitradurga</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>State</td>
+						<td>
+							<select name="sta">
+									<option selected="" value="Default">(Please select a state)</option>
+									<option>Karnataka</option>
+									<option>Kerala</option>
+									<option>TamilNadu</option>
+									<option>Maharashtra</option>
+									<option>Gujurat</option>
+									<option>AndhraPradesh</option>
+									<option>Madhyapradesh</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Upload proof of address</td>
+						<td id="id1"><input type="file" name="upoa"></td>
+					</tr>
+				</form>
+			</table>
+			<div><h2 id="id2"><center>BANK ACCOUNT DETAILS</center></h2></div>
+				<form>
+					<table>
+						<tr>
+							<td>Bank Account Number</td>
+							<td id="id1"><input type="text" name="ban"></td>
+						</tr>
+<tr>
+<td>IFSC Code</td>
+<td id="id1"><input type="text" pattern="[a-zA-z]{4}[1-9]{7}" name="ifscc"></td>
+</tr>
+<tr>
+<td>Bank Name</td>
+<td id="id1"><input type="text" name="bankn"></td>
+</tr>
+<tr>
+<td>Bank Branch</td>
+<td id="id1"><input type="text" name="banb"></td>
+</tr>
+<tr>
+<td>Your Name As Per Pass Book</td>
+<td id="id1"><input type="text" name="naspb"></td>
+</tr>
+<tr>
+<td>Upload Bank Passbook</td>
+<td id="id1"><input type="file" name="ubp"></td>
+</tr>
+</form>
+</table>
+<div><h2 id="id2"><center>CURRENT ACADEMIC DETAILS</center></h2></div>
+<form>
+<table>
+<tr>
+<td>Course Level</td>
+<td>
+<select name="courl">
+<option selected="" value="Default">(Please select a course level)</option>
+<option>Post Graduate</option>
+<option>Under Graduate</option>
+<option>P.hd</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Course Name</td>
+<td>
+<select name="cournm">
+<option selected="" value="Default">(Please select a course name)</option>
+<option>B.TECH</option>
+<option>M.tech</option>
+<option>M.Com</option>
+<option>B.Com</option>
+<option>B.Sc</option>
+<option>BCA</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Name Of The College</td>
+<td id="id1"><input type="text" name="nocol"></td>
+</tr>
+<tr>
+<td>Tution Fee</td>
+<td id="id1"><input type="text" name="tfee"></td>
+</tr>
+<tr>
+<td>Upload Tution Fee Recipt</td>
+<td id="id1"><input type="file" name=""></td>
+</tr>
+<tr>
+<td>Non Tution Fee</td>
+<td id="id1"><input type="text" name="nontfee"></td>
+</tr>
+<tr>
+<td>Upload Non Tution Fee Recipt</td>
+<td id="id1"><input type="file"></td>
+</tr>
+<tr>
+<td>total</td>
+<td id="id1"><input name="tot"></td>
+</tr>
+</form>
+</table>
+<div><h2 id="id2"><center>CLASS 10th</center></h2></div>
+<form>
+<table>
+<tr>
+<td>Name Of The Instituon</td>
+<td id="id1"><input type="text" name="institutn"></td>
+</tr>
+<td>Month And Year Of Passing</td>
+<td id="id1"><input type="month and year" name="monthyear"></td>
+</tr>
+<tr>
+<td id="id1">Percentage</td>
+<td><input type="text" name="percentage"></td>
+<td id="id1" >Total Marks Obtained</td>
+<td><input type="text" id="n1"></td>
+<td id="id1">Out Of Total Marks</td>
+<td><input type="text" id="n2"></td>
+</tr>
+<tr>
+<td>Upload Marksheet</td>
+<td id="id1"><input type="file"></td>
+</tr>
+</form>
+</table>
+<div><h2 id="id2"><center>CLASS 12th</center></h2></div>
+<form>
+<table>
+<tr>
+<td>Name Of The Instituon</td>
+<td id="id1"><input type="text"></td>
+</tr>
+<td>Month And Year Of Passing</td>
+<td id="id1"><input type="month and year"></td>
+</tr>
+<tr>
+<td id="id1">Percentage</td>
+<td><input type="text"></td>
+<td id="id1">Total Marks Obtained</td>
+<td><input type="text" id="n1"></td>
+<td id="id1">Out Of Total Marks</td>
+<td><input type="text" id="n2"></td>
+<td></td>
+</tr>
+<tr>
+<td>Upload Marksheet</td>
+<td id="id1"><input type="file"></td>
+</tr>
+</form>
+</table>
+<div><h2 id="id2"><center>PREVIOUS YEAR DETAILS</center></h2></div>
+<form>
+<table>
+<tr>
+<td>No. Of Year Completed For The Course Named</td>
+<td>
+<select>
+<option selected="" value="Default">(Please select a year completed)</option>
+<option>First year</option>
+<option>Second year</option>
+<option>Third year</option>
+<option>Fourth year</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Percentage</td>
+<td></td>
+</tr>
+<tr>
+<td>CGPA Obtained</td>
+<td><input type="text"></td>
+<td>Out Of CGPA</td>
+<td><input type="text"></td>
+<td>Percentage</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Upload Marksheet</td>
+<td><input type="file"></td>
+</tr>
+<tr>
+<th><input type="submit" value="submit" onclick="formvalidation()" name="submit"></th>
+<td><input type="Reset" name="Reset" value="Reset"/></td>
+</tr>
+</form>
+</body>
+</html>
